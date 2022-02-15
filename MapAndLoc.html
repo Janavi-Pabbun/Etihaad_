@@ -68,7 +68,7 @@
   <body>
   	<div class= "ui main container segment">
   		<h1 style="font-size: 75px; font-family: georgia">ETIHAAD</h1>
-  		<h2 style="text-align: right; font-family: georgia">Because you must look before you leave!</h2>
+  		<h2 style="text-align: right; font-family: georgia">Ensure your safety by just a click !</h2>
   	</div>
     <input id="origin-input" class="controls" type="text"
         placeholder="Enter an origin location">
@@ -92,9 +92,10 @@
    	<h2>Choose the path with the least danger index for a safe travel!</h2>
    </div>
     
-       <script async defer src="https://maps.googleapis.com/maps/api/js?key=<YOUR API KEY>&libraries=places"
+       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0tRUo3hU_fdFvFTkOnJL4wGemRdQrn3c&libraries=places"
         ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    
    
     <script>
    
@@ -306,7 +307,7 @@
                                if(data[i].properties.mag==4){
          var marker = new google.maps.Marker({
           position: new google.maps.LatLng(data[i].longi,data[i].lati),
-          icon:image1,
+        // <!-- icon:image1, -- > 
           map: map
         });
 dindex[k]+=4;
@@ -314,25 +315,25 @@ dindex[k]+=4;
          else if(data[i].properties.mag==3){
          var marker = new google.maps.Marker({
           position: new google.maps.LatLng(data[i].longi,data[i].lati),
-          icon:image2,
+         // icon:image2,
           map: map
         }); dindex[k]+=3;}
        else if(data[i].properties.mag==2){
          var marker = new google.maps.Marker({
           position: new google.maps.LatLng(data[i].longi,data[i].lati),
-          icon:image3,
+          //icon:image3,
           map: map
         }); dindex[k]+=2;}
         else if(data[i].properties.mag==1){
          var marker = new google.maps.Marker({
           position: new google.maps.LatLng(data[i].longi,data[i].lati),
-          icon:image4,
+          //icon:image4,
           map: map
         }); dindex[k]+=1;}
         else if(data[i].properties.mag==0){
          var marker = new google.maps.Marker({
           position: new google.maps.LatLng(data[i].longi,data[i].lati),
-          icon:image5,
+          //icon:image5,
           map: map
         }); }
                         
