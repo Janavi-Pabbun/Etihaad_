@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root
+{
+    --primary-color: #e9d5ff;
+    --offwhite-color: #f3f4f6;
+    --secondary-color: #0f172a;
+}
+body
+{font-family:'Montserrat', sans-serif;
+margin: 0px;
+};
+
+/** Containers **/
+.-container
+{
+    padding:.5rem,.5rem
+
+}
+.-centre-container
+{
+    max-width: 600px;
+    margin: auto;
+}
+
+/** Links **/
+.links
+{
+text-decoration: none;
+padding: 1rem 1rem;
+
+}
+
+.primary-link
+{
+background-color: var(--secondary-color);
+color: var(--primary-color);
+border-radius: 0.25rem;
+margin: 1rem 1rem 1rem 0rem;
+display: block;
+max-width: 140px;
+}
+
+/** Lists **/
+.list
+{
+    list-style-type: none;
+}
+
+.inline-list
+{
+    display: inline;
+    padding:0rem 0.5rem
+}
+
+/** Navigation **/
+.Navigation
+{
+    background-color: var(--primary-color);
+    color: whitesmoke;
+    padding: 1rem;
+   
+}
+.Navigation .nav-div
+{
+padding: 1rem;
+font-weight: bold;
+}
+.Navigation .links
+{
+    color: whitesmoke;
+    
+}
+.Navigation .-right
+{
+    text-align: right;
+}
+.Navigation .link-active
+{
+    font-weight: bold;
+}
+
+.header
+{
+    padding: 2rem
+}
+.header .header-image
+{
+max-width: 400px;
+display: block;
+margin: auto;
+
+}/** To align the image into centre **/
+
+.header .header-heading
+{
+    padding: 1rem;
+    font-weight: bolder;
+    text-align: center;
+    color: burlywood;
+}
+.section h1
+{
+    text-align: center;
+    padding: 1rem 0.5rem
+}
+.ow
+{
+background-color: var(--offwhite-color);
+
+}
+
+.footer
+{
+    background-color: var(--primary-color);
+    padding : 1rem 1rem;
+    text-align: center;
+    color:whitesmoke
+
+
+}
+.footer .links{
+    color: whitesmoke;
+}
+
+.footer ul
+{
+    padding-inline-start: 0px;
+}
